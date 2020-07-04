@@ -13,14 +13,14 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    nome: { 
+    nome: {
       description: 'Nome completo.',
-      type: 'string', 
-      required: true 
+      type: 'string',
+      required: true
     },
-    banco: { 
+    banco: {
       description: 'Nome do Banco.',
-      type: 'string' 
+      type: 'string'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

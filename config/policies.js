@@ -11,9 +11,12 @@
 module.exports.policies = {
 
   // '*': 'is-logged-in',
-
+  '*': true,
   // Bypass the `is-logged-in` policy for:
-  'cliente/*': true,
-  'movimento/*': true,
-  'view-homepage-or-redirect': true,
+  // 'cliente/*': true,
+  // 'movimento/*': true,
+  // 'view-homepage-or-redirect': true,
+  // 'graphBaseCt1': true,
+  // 'graphBaseCt2': true,
+
 };

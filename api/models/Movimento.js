@@ -22,10 +22,10 @@ module.exports = {
       type: 'number',
       required: true
     },
-    credito: { 
+    credito: {
       description: 'Se verdadeiro representa um Crédito',
       type: 'boolean',
-       defaultsTo: true, 
+      defaultsTo: true,
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

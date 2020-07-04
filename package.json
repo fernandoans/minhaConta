@@ -1,8 +1,8 @@
 {
-  "name": "tst-proj",
+  "name": "minhaconta",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "1.0.0",
+  "description": "Dashboard das Contas Pessoais",
   "keywords": [],
   "dependencies": {
     "@sailshq/connect-redis": "^3.2.1",
@@ -32,9 +32,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fernando/tst-proj.git"
+    "url": "https://github.com/fernandoans/minhaConta"
   },
-  "author": "fernando",
+  "author": "Fernando Anselmo",
   "license": "",
   "engines": {
     "node": "^10.19"

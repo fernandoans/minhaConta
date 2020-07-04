@@ -13,8 +13,9 @@ module.exports.routes = {
   //  ╦ ╦╔═╗╔╗ ╔═╗╔═╗╔═╗╔═╗╔═╗
   //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
-  'GET /':          { action: 'view-homepage-or-redirect' },
-  'GET /graphBase': 'MovimentoController.graphBase',
+  'GET /': { action: 'view-homepage-or-redirect' },
+  'GET /graphBaseCt1': 'MovimentoController.graphBaseCt1',
+  'GET /graphBaseCt2': 'MovimentoController.graphBaseCt2',
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗

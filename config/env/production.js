@@ -21,7 +21,6 @@
 
 module.exports = {
 
-
   /**************************************************************************
   *                                                                         *
   * Tell Sails what database(s) it should use in production.                *
@@ -47,8 +46,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      adapter: 'sails-mysql',
+      url: 'mysql://root:root@localhost:3306/conta',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -73,13 +72,9 @@ module.exports = {
       // ssl: true,
 
     },
-
   },
 
-
-
   models: {
-
     /***************************************************************************
     *                                                                          *
     * To help avoid accidents, Sails automatically sets the automigration      *
@@ -102,10 +97,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     // cascadeOnDestroy: false,
-
   },
-
-
 
   /**************************************************************************
   *                                                                         *
@@ -120,8 +112,6 @@ module.exports = {
   blueprints: {
     shortcuts: false,
   },
-
-
 
   /***************************************************************************
   *                                                                          *
@@ -148,14 +138,11 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allowOrigins: [
+        'http://localhost',
+      ]
     },
-
   },
-
-
 
   /***************************************************************************
   *                                                                          *
@@ -168,7 +155,6 @@ module.exports = {
   *                                                                          *
   ***************************************************************************/
   session: {
-
     /***************************************************************************
     *                                                                          *
     * Production session store configuration.                                  *
@@ -197,8 +183,6 @@ module.exports = {
     //
     //--------------------------------------------------------------------------
 
-
-
     /***************************************************************************
     *                                                                          *
     * Production configuration for the session ID cookie.                      *
@@ -224,10 +208,7 @@ module.exports = {
       // secure: true,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
-
   },
-
-
 
   /**************************************************************************
   *                                                                          *
@@ -240,7 +221,6 @@ module.exports = {
   *                                                                          *
   ***************************************************************************/
   sockets: {
-
     /***************************************************************************
     *                                                                          *
     * Uncomment the `onlyAllowOrigins` whitelist below to configure which      *
@@ -250,11 +230,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
-
+    onlyAllowOrigins: [
+      'http://localhost',
+    ],
 
     /***************************************************************************
     *                                                                          *
@@ -279,10 +257,7 @@ module.exports = {
     // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
     // ```
     //--------------------------------------------------------------------------
-
   },
-
-
 
   /**************************************************************************
   *                                                                         *
@@ -295,10 +270,7 @@ module.exports = {
     level: 'debug'
   },
 
-
-
   http: {
-
     /***************************************************************************
     *                                                                          *
     * The number of milliseconds to cache static assets in production.         *
@@ -325,11 +297,8 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
-
+    trustProxy: true,
   },
-
-
 
   /**************************************************************************
   *                                                                         *
@@ -340,9 +309,7 @@ module.exports = {
   * this, just try deploying without setting it and see if it works.)       *
   *                                                                         *
   ***************************************************************************/
-  // port: 80,
-
-
+  port: 8080,
 
   /**************************************************************************
   *                                                                         *
@@ -363,8 +330,6 @@ module.exports = {
   **************************************************************************/
   // ssl: undefined,
 
-
-
   /**************************************************************************
   *                                                                         *
   * Production overrides for any custom settings specific to your app.      *
@@ -374,7 +339,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
+    baseUrl: 'http://localhost',
     internalEmailAddress: 'support@example.com',
 
     // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
@@ -389,9 +354,5 @@ module.exports = {
     // sails_custom__stripeSecret=sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm
     // ```
     //--------------------------------------------------------------------------
-
   },
-
-
-
 };
