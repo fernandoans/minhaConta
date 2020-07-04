@@ -16,5 +16,5 @@ Permite uma visão gerencial da conta por parte do cliente.
 
 ## Informações dessa Versão
 
-Projeto Inicial gerado em 29 2020 21:39:51 GMT-0300 (Brasilia Standard Time) using Sails v1.2.4.<\br> 
+Projeto Inicial gerado em 29 2020 21:39:51 GMT-0300 (Brasilia Standard Time) using Sails v1.2.4.<br/> 
 Limpeza do projeto padrão do Sails.js
